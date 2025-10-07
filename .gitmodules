@@ -4,3 +4,12 @@
 [submodule "plugins/SpamDetector"]
 	path = plugins/SpamDetector
 	url = https://github.com/mapasculturais/plugin-SpamDetector.git
+[submodule "themes/SpCultura"]
+	path = themes/SpCultura
+	url = https://github.com/mapasculturais/theme-SpCultura
+[submodule "themes/TemplateV1"]
+	path = themes/TemplateV1
+	url = https://github.com/mapasculturais/theme-TemplateV1.git
+[submodule "plugins/Accessibility"]
+	path = plugins/Accessibility
+	url = https://github.com/mapasculturais/plugin-Accessibility.git

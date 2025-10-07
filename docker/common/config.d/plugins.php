@@ -3,7 +3,9 @@
 return [
     'plugins' => [
         'MultipleLocalAuth' => [ 'namespace' => 'MultipleLocalAuth' ],
-        'SamplePlugin' => ['namespace' => 'SamplePlugin'],
+        #'SamplePlugin' => ['namespace' => 'SamplePlugin'],
         'SpamDetector',
+    	'Accessibility',
+    	
     ]
 ];

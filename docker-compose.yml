@@ -39,6 +39,8 @@ services:
       - ./docker-data/saas-files:/var/www/var/saas-files
       - ./docker-data/sessions:/var/www/var/sessions
       - ./docker-data/logs:/var/www/var/logs
+      
+      - ./docker/common/lgpd-terms:/var/www/config/lgpd-terms
 
       - ./docker/production/config.d:/var/www/config/prod.d
     links:
@@ -83,7 +85,7 @@ services:
 ## para os usuários no caso de o ambiente de homologação utilizar um banco de dados cópia
 ## de produção
 
-  # mailhog: 
-  #   image: mailhog/mailhog
-  #   ports:
-  #     - "8025:8025"
+  mailhog: 
+     image: mailhog/mailhog
+     ports:
+       - "8025:8025"
