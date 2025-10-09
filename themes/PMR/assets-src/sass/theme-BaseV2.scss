@@ -88,5 +88,13 @@ $home-register: #002842;
 }
 
 .mc-header-logo {
-    width: 146.14px;
+  #width: 146.14px;
+}
+
+.mc-header-logo .theme-logo__logo--img img{
+	max-height: 40px!important;
+}
+
+.main-footer .theme-logo.onlyImg .theme-logo__logo--img img {
+    max-height: 4rem;
 }

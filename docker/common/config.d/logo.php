@@ -3,10 +3,10 @@ use \MapasCulturais\i;
 
 return [
     /* Primeira linha do logo configurável */
-    'logo.title' => env('LOGO_TITLE','Mapa'),
+    'logo.title' => 'Mapa Cultural',
 
     /* Segunda linha do logo configurável */
-    'logo.subtitle' => env('LOGO_SUBTITLE','Cultural'),
+    'logo.subtitle' => 'de Redenção-PA',
 
     /* Cores da logo */
     'logo.colors' => [
@@ -21,8 +21,9 @@ return [
 
     ex: `img/meu-mapa-logo.jpg` (pasta assets/img/meu-mapa-logo.jpg do tema) 
     */
-    'logo.image' => env('LOGO_IMAGE', 'https://redencao.pa.gov.br/img/logos/logo-marron.png'),
+    #'logo.image' =>'img/logo-Mapa-PE.jpeg',
+	'logo.image' => env('LOGO_IMAGE', 'https://redencao.pa.gov.br/img/logos/logo-marron.png'),
 
     /* Esconde o título e subtitulo */
-    'logo.hideLabel' => env('LOGO_HIDELABEL', true),
+    'logo.hideLabel' => true,
 ];

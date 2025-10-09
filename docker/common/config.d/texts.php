@@ -3,7 +3,8 @@ use \MapasCulturais\i;
 
 return [
     "text:home-header.title" => i::__("Boas-vindas ao Mapa Cultural de Redenção (PA)"),
-    "text:home-header.description" => i::__("O Mapa Cultural de Redenção (PA) é uma ferramenta de gestão cultural que garante a estruturação de Sistemas de Informações e Indicadores."),
+    "text:home-header.description" => i::__("O Mapa Cultural de Redenção (PA) é uma plataforma digital voltada à gestão e valorização da cultura local. Ela reúne informações sobre agentes, espaços, eventos e iniciativas culturais do município, fortalecendo a rede cultural de Redenção.
+											Por meio do Mapa Cultural, é possível participar de editais, cadastrar projetos e acompanhar a agenda de atividades que movimentam a cena cultural do município."),
     "text:home-opportunities.description" => i::__("Cadastre-se, participe de editais e oportunidades e concorra aos benefícios."),
     "text:home-entities.events" => i::__("Você pode pesquisar eventos culturais nos campos de busca do seu interesse que ajudam na  precisão de sua pesquisa. Como usuário cadastrado, você pode incluir seus eventos na plataforma e divulgá-los gratuitamente."),
     "text:home-entities.agents" => i::__("Neste espaço, estão registrados artistas, gestores e produtores; uma rede de atores envolvidos na cena cultural da região. Você pode cadastrar um ou mais agentes (grupos, coletivos, bandas, instituições, empresas, associações, cooperativas e etc)."),

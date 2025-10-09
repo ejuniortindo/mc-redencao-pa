@@ -25,7 +25,9 @@ services:
       - ../plugins/MultipleLocalAuth:/var/www/src/plugins/MultipleLocalAuth
       - ../plugins/SpamDetector:/var/www/src/plugins/SpamDetector
       - ../plugins/Accessibility:/var/www/src/plugins/Accessibility
-      - ../plugins/SettingsPMR:/var/www/src/plugins/SettingsPMR
+      - ../plugins/MapasBlame:/var/www/src/plugins/MapasBlame
+      - ../plugins/MetadataKeyword:/var/www/src/plugins/MetadataKeyword
+      - ../plugins/AdminLoginAsUser:/var/www/src/plugins/AdminLoginAsUser
       - ../themes/PMR:/var/www/src/themes/PMR
 
     environment:

@@ -1,14 +1,10 @@
 <?php
 
 namespace PMR;
-use MapasCulturais\Themes\BaseV2;
 use MapasCulturais\App;
 
-/**
- * @method void import(string $components) Importa lista de componentes Vue. * 
- */
-class Theme extends BaseV2\Theme
-{
+
+class Theme extends \MapasCulturais\Themes\BaseV2\Theme {
 
     static function getThemeFolder()
     {
