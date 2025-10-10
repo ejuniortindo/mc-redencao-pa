@@ -1,4 +1,5 @@
 <?php
+use MApasCulturais\Entities;
 
 return [
     'plugins' => [
@@ -7,6 +8,7 @@ return [
         'SpamDetector',
     	'AdminLoginAsUser',
     	'Accessibility',
+    	'Analytics',
     
     	'MapasBlame' => [
             'namespace' => 'MapasBlame',
@@ -23,6 +25,6 @@ return [
                 'location' => ['En_Municipio', 'En_Nome_Logradouro', 'En_Bairro']
             ]
         ],
-    	
     ]
+   
 ];

@@ -22,3 +22,9 @@
 [submodule "plugins/AdminLoginAsUser"]
 	path = plugins/AdminLoginAsUser
 	url = https://github.com/mapasculturais/plugin-AdminLoginAsUser.git
+[submodule "plugins/Analytics"]
+	path = plugins/Analytics
+	url = https://github.com/mapasculturais/plugin-Analytics.git
+[submodule "plugins/Metabase"]
+	path = plugins/Metabase
+	url = https://github.com/mapasculturais/plugin-Metabase.git

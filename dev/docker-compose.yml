@@ -28,6 +28,8 @@ services:
       - ../plugins/MapasBlame:/var/www/src/plugins/MapasBlame
       - ../plugins/MetadataKeyword:/var/www/src/plugins/MetadataKeyword
       - ../plugins/AdminLoginAsUser:/var/www/src/plugins/AdminLoginAsUser
+      - ../plugins/Metabase:/var/www/src/plugins/Metabase
+      - ../plugins/Analytics:/var/www/src/plugins/Analytics
       - ../themes/PMR:/var/www/src/themes/PMR
 
     environment:
