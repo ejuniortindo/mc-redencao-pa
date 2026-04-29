@@ -9,17 +9,17 @@ return [
     'homeHeader.background' => 'https://redencao.pa.gov.br/front/img/banner/banner-principal.jpg',
 
     /* Primeiro banner */
-    'homeHeader.banner' => 'https://mapacultural.pa.gov.br/assets/mapacultural.pa.gov.br/img/banner-paulo-gustavo.img.zftt1s.png',    
+    'homeHeader.banner' => 'img/banner-paulo-gustavo.png',
     'homeHeader.bannerLink' => 'https://redencao.pa.gov.br/',        
     'homeHeader.downloadableLink' => false,  /* Define se link é para download ou para abrir em uma nova aba */
 	
 	/* Segundo banner */
-    'homeHeader.secondBanner' => 'https://mapacultural.pa.gov.br/assets/mapacultural.pa.gov.br/img/banner-paulo-gustavo.img.zftt1s.png',   
+    'homeHeader.secondBanner' => 'img/banner-paulo-gustavo.png',
     'homeHeader.secondBannerLink' => 'https://redencao.pa.gov.br/',    
     'homeHeader.secondDownloadableLink' => false,
 
     /* Terceiro banner */
-    'homeHeader.thirdBanner' => 'https://mapacultural.pa.gov.br/assets/mapacultural.pa.gov.br/img/banner-paulo-gustavo.img.zftt1s.png',  
+    'homeHeader.thirdBanner' => 'img/banner-paulo-gustavo.png',
     'homeHeader.thirdBannerLink' => 'https://redencao.pa.gov.br/',
     'homeHeader.thirdDownloadableLink' => false,
 ];
