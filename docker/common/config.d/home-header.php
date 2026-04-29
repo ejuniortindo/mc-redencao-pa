@@ -6,7 +6,7 @@ return [
     Define o nome do asset da imagem do background e banner no header da home - Substituirá o background padrão
     ex: `img/meu-home-header-background.jpg` (pasta assets/img/meu-home-header-background.jpg do tema)
     */
-    'homeHeader.background' => 'https://redencao.pa.gov.br/front/img/banner/banner-principal.jpg',
+    #'homeHeader.background' => 'img/home/home-header/home-header.jpg',
 
     /* Primeiro banner */
     'homeHeader.banner' => 'img/banner-paulo-gustavo.png',
