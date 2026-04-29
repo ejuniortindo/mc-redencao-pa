@@ -2,6 +2,8 @@
 use MapasCulturais\i;
 
 return [
+	'base.url' => env('BASE_URL', ''),
+	#'app.supportEmail' => 'mapacultural@redencao.pa.gov.br',
     'app.siteName' => 'Mapa Cultural de Redenção (PA)',
     'app.siteDescription' => "O Mapa Cultural de Redenção (PA) é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
     
@@ -24,5 +26,6 @@ return [
     'app.geoDivisionsFilters' => [16],
     
     //'app.geoDivisionsShowAgentRI' => true,
+	//'footer.supportMessage' => 'Teste',
 
 ];

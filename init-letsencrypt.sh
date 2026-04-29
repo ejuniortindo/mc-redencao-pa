@@ -1,22 +1,22 @@
 #!/bin/bash
 
-if ! [ -x "$(command -v docker-compose)" ]; then
-  echo 'Error: docker-compose is not installed.' >&2
+if ! [ -x "$(command -v docker compose)" ]; then
+  echo 'Error: docker compose is not installed.' >&2
   exit 1
 fi
 
 echo "EDITE ESTE ARQUIVO E DEFINA AS VARIÁVEIS domain, email e staging"
-exit; # E APAGUE ESSA LINHA
+#exit; # E APAGUE ESSA LINHA
 
 # Domínio da instalação
-domain=(meumapa.gov.br)
+domain=(mapacultural.redencao.pa.gov.br)
 
 # Informe um e-mail válido
-email="webmaster@meumapa.gov.br"
+email="mapacultural@redencao.pa.gov.br"
 
 # EVITA que se atinja o LIMITE DE REQUESTS ao Let's Encrypt enquanto se testa as configurações
 # defina stagin=0 quando os testes passarem e execute novamente o script
-staging=1 
+staging=0 
 
 data_path="./docker-data/certbot"
 rsa_key_size=4096
