@@ -22,7 +22,7 @@ return [
     ex: `img/meu-mapa-logo.jpg` (pasta assets/img/meu-mapa-logo.jpg do tema) 
     */
     #'logo.image' =>'img/logo-Mapa-PE.jpeg',
-	'logo.image' => env('LOGO_IMAGE', 'https://redencao.pa.gov.br/img/logos/logo-marron.png'),
+	'logo.image' => env('LOGO_IMAGE', 'img/logos/logo-pmr.png'),
 
     /* Esconde o título e subtitulo */
     'logo.hideLabel' => true,
