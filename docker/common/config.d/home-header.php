@@ -10,8 +10,8 @@ return [
 
     /* Primeiro banner */
     'homeHeader.banner' => 'img/home/home-banners/banner-aldir-blanc.png',
-//    'homeHeader.bannerLink' => 'https://redencao.pa.gov.br/',
-//    'homeHeader.downloadableLink' => false,  /* Define se link é para download ou para abrir em uma nova aba */
+    'homeHeader.bannerLink' => 'https://mapacultural.redencao.pa.gov.br/oportunidades',
+    'homeHeader.downloadableLink' => true,  /* Define se link é para download ou para abrir em uma nova aba */
 	
 	/* Segundo banner */
     'homeHeader.secondBanner' => 'img/home/home-banners/banner-forum-de-cultura.png',
