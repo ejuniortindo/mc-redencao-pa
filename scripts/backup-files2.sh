@@ -17,10 +17,10 @@ BACKUP_NAME="$(date +%Y%m%d%H%M%S)-mapacultural-files"
 
 # Configurações FTP
 FTP_ENABLED=true
-FTP_HOST="172.16.0.20"
-FTP_USER="junior.ti"
-FTP_PASS="Ejr@94_30"
-FTP_PATH="/backups/mapacultural"
+FTP_HOST="143.255.205.193"
+FTP_USER="master_ftp"
+FTP_PASS="TiPMR2528@"
+FTP_PATH="/MAPACULTURAL"
 
 USE_DAILY_SUBFOLDER=false
 DATE_FOLDER=$(date +%Y-%m-%d)
