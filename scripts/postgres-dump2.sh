@@ -25,7 +25,7 @@ FTP_ENABLED="${FTP_ENABLED:-true}"
 FTP_HOST="${FTP_HOST:-143.255.205.193}"
 FTP_USER="${FTP_USER:-master_ftp}"
 FTP_PORT="${FTP_PORT:-2121}"
-FTP_PASS="${FTP_PASS:-TiPMR2528@}"
+FTP_PASS="${FTP_PASS:-}" # Recomenda-se definir no ambiente
 FTP_PATH="${FTP_PATH:-/MAPACULTURAL}"
 
 for container in $containers; do
