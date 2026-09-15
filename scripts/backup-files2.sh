@@ -19,7 +19,6 @@ BACKUP_NAME="$(date +%Y%m%d%H%M%S)-mapacultural-files"
 ENV_FILE="$PROJECT_FOLDER/.env"
 if [ -f "$ENV_FILE" ]; then
     echo "📄 Carregando configurações do arquivo .env..."
-    # Exporta apenas linhas que contêm chave=valor (ignorando comentários e linhas em branco)
     set -o allexport
     eval "$(grep -v '^#' "$ENV_FILE" | grep -v '^\s*$' | sed -e 's/=/="/' -e 's/$/"/')"
     set +o allexport
@@ -84,11 +83,11 @@ if [ "$FTP_ENABLED" = "true" ]; then
     if lftp -p "$FTP_PORT" -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<FTP_EOF
 set ftp:ssl-allow yes
 set ftp:passive-mode yes
-set cmd:fail-exit yes
+set cmd:fail-exit no
 set net:max-retries 3
 set net:timeout 30
 
-mkdir -p $REMOTE_DIR 2>/dev/null || true
+mkdir -p $REMOTE_DIR
 cd $REMOTE_DIR
 put "$BACKUP_FOLDER/$FILES_BACKUP_NAME"
 bye
@@ -106,6 +105,7 @@ FTP_EOF
         lftp -p "$FTP_PORT" -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<LIST_EOF 2>/dev/null | grep 'mapacultural-files\.tar\.gz$' > "$FILES_LIST" || true
 set ftp:ssl-allow yes
 set ftp:passive-mode yes
+set cmd:fail-exit no
 cd "$REMOTE_DIR"
 cls -1
 bye
@@ -121,6 +121,7 @@ LIST_EOF
                 lftp -p "$FTP_PORT" -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<CLEAN_EOF 2>/dev/null || true
 set ftp:ssl-allow yes
 set ftp:passive-mode yes
+set cmd:fail-exit no
 cd "$REMOTE_DIR"
 $(echo "$FILES_TO_DELETE" | while IFS= read -r file; do [ -n "$file" ] && echo "rm \"$file\""; done)
 bye

@@ -91,11 +91,11 @@ for container in $containers; do
         if lftp -p "$FTP_PORT" -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<EOF
 set ftp:ssl-allow yes
 set ftp:passive-mode yes
-set cmd:fail-exit yes
+set cmd:fail-exit no
 set net:max-retries 3
 set net:timeout 30
 
-mkdir -p $REMOTE_DIR 2>/dev/null || true
+mkdir -p $REMOTE_DIR
 cd $REMOTE_DIR
 put "$dumpfolder/$filename"
 bye
@@ -114,6 +114,7 @@ EOF
             lftp -p "$FTP_PORT" -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<LIST_EOF 2>/dev/null | grep '\.sql\.gz$' > "$FILES_LIST" || true
 set ftp:ssl-allow yes
 set ftp:passive-mode yes
+set cmd:fail-exit no
 cd "$REMOTE_DIR"
 cls -1
 bye
@@ -129,6 +130,7 @@ LIST_EOF
                     lftp -p "$FTP_PORT" -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" <<CLEAN_EOF 2>/dev/null || true
 set ftp:ssl-allow yes
 set ftp:passive-mode yes
+set cmd:fail-exit no
 cd "$REMOTE_DIR"
 $(echo "$FILES_TO_DELETE" | while IFS= read -r file; do [ -n "$file" ] && echo "rm \"$file\""; done)
 bye
